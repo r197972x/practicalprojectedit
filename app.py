@@ -40,7 +40,7 @@ def main():
         else:
             result = 'YES'
 
-        return render_template('main.html',result=result,possibility_factor=possibility_factor )
+        return render_template('main.html',result=prediction,possibility_factor=possibility_factor )
 
 
 if __name__ == '__main__':
