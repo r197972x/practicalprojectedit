@@ -1,1 +1,62 @@
+<!DOCTYPE html>
+<html>
+<title>Diabetes prediction for pregnant women</title>
+<head>
+<style type="text/css">
+div
+{
+   width:100px;
+   height:75px;
+   background-color:grey;
+   border:1px solid black;
+}
+
+form {
+        margin: auto;
+        width: 35%;
+     }
+     .result {
+            margin: auto;
+            width: 35%;
+            border: 1px solid #ccc;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<form action="{{ url_for('main') }}" method="POST">
+        <fieldset>
+            <legend>Input values</legend>
+            Pregnancies:
+            <input name="Pregnancies" type="number" placeholder="(number of pregnancies)" required><br>
+            Glucose:
+            <input name="Glucose" type="number" placeholder="(glucose level)" required><br>
+            BloodPressure:
+            <input name="BloodPressure" type="number" placeholder="(level of BP)" required><br>
+            SkinThickness:
+            <input name="SkinThickness" type="number" placeholder="(thickness)" required><br>
+            Insulin:
+            <input name="Insulin" type="number" placeholder="(level of insulin)" required><br>
+            BMI:
+            <input name="BMI" type="number" placeholder="(number of BMI)" required><br>
+            DiabetesPedigreeFunction:
+            <input name="DiabetesPedigreeFunction" type="number" placeholder="(number of DPF)" required><br>
+            Age:
+            <input name="Age" type="number" placeholder="(age in years)" required><br>
+           
+            <br>
+            <input type="submit" name="" id="">
+        </fieldset>
+<br><br></form>
+    <div class='result' >
+        <br>Diabetes prediction : <br>
+        <p style="font-size: 50px">{{ result }}</p>
+         <br>
+          
+    </div> 
+    
+</body>
+</html>
 
