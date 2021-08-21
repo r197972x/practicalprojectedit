@@ -17,18 +17,21 @@ h1
 form {
         margin: auto;
         width: 35%;
+        background-color : #FFFFFF;
+
      }
      .result {
             margin: auto;
             width: 35%;
             border: 2px solid #808080;
+            background-color : #FFFFFF;
         }
     </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<h1>Diabetes diagnosis system</h1>
+<h1 style="color:white;">Diabetes diagnosis system</h1>
 <body>
 <form action="{{ url_for('main') }}" method="POST">
         <fieldset>
@@ -58,7 +61,7 @@ form {
         <br>Diabetes prediction : <br>
         <p style="font-size: 30px">{{ result }}</p>
          <br> <br>
-         Possibility factor: 
+         Probability factor: 
         <p style="font-size: 30px">{{ possibility_factor }}</p>
           
           
