@@ -17,14 +17,15 @@ h1
 form {
         margin: auto;
         width: 35%;
-       
+        color:#FFFFFF;
 
      }
      .result {
             margin: auto;
             width: 35%;
-            border-style: groove;
-            
+           border-style: groove;
+           border-color: #000000
+           color: #FFFFFF; 
             
         }
     
@@ -38,21 +39,21 @@ form {
 <form action="{{ url_for('main') }}" method="POST">
         <fieldset>
             <legend>Input values</legend>
-            Pregnancies:
+            Pregnancies <br>
             <input name="Pregnancies" type="number" placeholder="(number of pregnancies)" required><br>
-            Glucose:
+            Glucose <br>
             <input name="Glucose" type="number" placeholder="(glucose level)" required><br>
-            BloodPressure:
+            BloodPressure <br>
             <input name="BloodPressure" type="number" placeholder="(level of BP)" required><br>
-            SkinThickness:
+            SkinThickness <br>
             <input name="SkinThickness" type="number" placeholder="(thickness)" required><br>
-            Insulin:
+            Insulin <br>
             <input name="Insulin" type="number" placeholder="(level of insulin)" required><br>
-            BMI:
+            BMI <br>
             <input name="BMI" type="number" placeholder="(number of BMI)" step="0.1" required><br>
-            DiabetesPedigreeFunction:
+            DiabetesPedigreeFunction <br>
             <input name="DiabetesPedigreeFunction" type="number" placeholder="(number of DPF)" step="0.001" required><br>
-            Age:
+            Age <br>
             <input name="Age" type="number" placeholder="(age in years)" required><br>
            
             <br>
